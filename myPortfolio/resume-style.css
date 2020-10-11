@@ -1,0 +1,147 @@
+/*stylesheet for resume.html*/
+body{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 14%;
+    width: 75%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "picture name name"
+                         "contact history history"
+                         "contact achievements achievements"
+                         "contact skills skills";
+}
+
+.picture{
+    grid-area: picture;
+    background-color: rgb(124, 8, 8);
+}
+
+.picture h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.picture img{
+    height: 375px;
+    width: 100%;
+}
+
+.first{
+    margin-bottom: .5em;
+}
+
+.name{
+    grid-area: name;   
+    background-color:  rgb(104, 19, 19); 
+    text-align: center;
+}
+
+.name h1{
+    margin-top: 4%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    color: white;
+    margin-left: 2%;
+}
+
+.name hr{
+    background-color: white;
+    color: white;
+    height: 4px;
+    width: 75%;
+}
+
+.name p{
+    margin-top: 7%;
+    font-size: 1.25em;
+    color: white;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+section{
+    background-color: rgb(104, 19, 19);
+}
+
+.contact{
+    grid-area: contact;
+    background-color: rgb(18, 18, 94);
+    color: white;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 4%;
+    color: white;
+}
+
+.horizontal{
+    background-color: white;
+    color: white;
+    height: 2px;
+    padding-left: 1%;
+    padding-right: 2%;
+    width: 92%;
+}
+
+.contact .links{
+    padding-top: 5%;
+}
+
+.contact #contact{
+    width: 50%;
+}
+
+.contact i{
+    margin-top: 5%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.contact p{
+    font-size: 1.15em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.history{
+    grid-area: history;
+}
+
+.achievements{
+    grid-area: achievements;
+}
+
+.skills{
+    grid-area: skills;
+}
+
+.history p{
+    font-size: 1.15em;
+    color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.achievements p{
+    font-size: 1.15em;
+    color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.skills p{
+    font-size: 1.15em;
+    color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
