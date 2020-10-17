@@ -1,0 +1,41 @@
+body{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 50% 40%;
+    grid-template-areas: ". title ."
+                            ". image ."
+                            ". text .";
+    background-color: rgb(177, 170, 167);
+}
+
+h1{
+    text-align: center;
+    font-size: 2.2em;
+    grid-area: title;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    width: 75%;
+    grid-area: image;
+    margin: 2% auto;
+    margin-bottom: 15%;
+    border-radius: 60%;
+    border-color: black;
+    box-shadow: ;
+}
+
+p{
+    grid-area: text;
+    margin: auto;
+    width: 75%;
+    text-align: justify;
+    font-size: 1.25em;
+    font-family: 'Raleway', sans-serif;
+}
+
+span{
+    font-weight: bolder;
+    font-size: 1.35em;
+}

@@ -39,6 +39,7 @@ body {
     padding: 20px;
     text-align: center;
     border: 2px solid black;
+    text-decoration: none;
   }
 
   a:hover{
