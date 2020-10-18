@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@500display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="contact-styles.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+
+    <form action="results.html" method="GET">
+        <h1 class="contact">Contact Me</h1>
+        <section class="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+        </section>
+
+        <section class="comments">
+            <p>Comments</p>
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Type comments here"></textarea>
+        </section>
+
+        <section class="checkboxes">
+            <p>How did you hear about me?</p>
+            <label for="check"><input type="checkbox" id="check" name="checkbox">Classmate</label><br>
+            <label for="check"><input type="checkbox" id="check" name="checkbox">Resume Submission</label><br>
+            <label for="check"><input type="checkbox" id="check" name="checkbox">LinkedIn</label><br>
+            <label for="check"><input type="checkbox" id="check" name="checkbox">Coding Academy Rec</label><br>
+        </section>
+
+        <section class="bubbles">
+            <p>Would you like to be contacted?</p>
+            <input type="radio" id="yes" name="response" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="response" value="no">
+            <label for="no">No</label>
+        </section>
+    </form>
+</body>
+
+</html>
