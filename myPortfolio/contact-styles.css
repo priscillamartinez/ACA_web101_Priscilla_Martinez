@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(177, 170, 167);
+}
 @media screen and (min-width: 325px) {
     body {
         overflow-x: hidden;
@@ -20,6 +23,11 @@
         grid-area: email;
         margin: auto;
     }
+
+    .email label{
+        margin-bottom: 7%;
+    }
+    
     .comments {
         grid-area: comments;
         margin: auto;
