@@ -9,8 +9,14 @@ body{
     form {
         display: grid;
         grid-template-columns: 10% 40% 40% 10%;
-        grid-template-rows: 20% 5% 35% 25% 15%;
-        grid-template-areas: ". contact contact ." ". email email ." ". comments comments ." ". checkboxes checkboxes ." ". bubbles bubbles .";
+        grid-template-rows: 1fr 0.5fr 0.5fr 2fr 1fr 1fr;
+        grid-template-areas: ". contact contact ." 
+                                ". email email ." 
+                                ". comments comments ." 
+                                ". checkboxes checkboxes ." 
+                                ". bubbles bubbles ."
+                                ". birthdate birthdate ."
+                                ". send send .";
         width: 100vw;
         height: 100vh;
     }
@@ -21,13 +27,9 @@ body{
     }
     .email {
         grid-area: email;
-        margin: auto;
+        margin: 7% auto;
     }
 
-    .email label{
-        margin-bottom: 7%;
-    }
-    
     .comments {
         grid-area: comments;
         margin: auto;
@@ -39,6 +41,30 @@ body{
     .bubbles {
         grid-area: bubbles;
         margin: auto;
+    }
+
+    .birthdate{
+        grid-area: birthdate;
+        margin: 5% auto 8% auto;
+    }
+
+    .send{
+        grid-area: send;
+        margin: auto;
+        margin-bottom: 5%;
+        font-size: 1.35em;
+        color: white;
+        background-color: rgb(238, 114, 13);
+        border: 2px;
+        border-color: rgb(238, 114, 13);
+        border-radius: 12%;
+        cursor: pointer;
+    }
+
+    .send:hover{
+        background-color: white;
+        border-color: white;
+        color: rgb(238, 114, 13);
     }
 }
 
@@ -47,34 +73,73 @@ body{
         overflow-x: hidden;
         font-family: 'Montserrat', sans-serif;
     }
+
     form {
         display: grid;
-        grid-template-columns: 20% 30% 30% 20%;
-        grid-template-rows: 20% 5% 35% 25% 15%;
-        grid-template-areas: ". contact contact ." ". email email ." ". comments comments ." ". checkboxes checkboxes ." ". bubbles bubbles .";
-        width: 100vw;
-        height: 100vh;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-rows: 1fr 0.5fr 0.5fr 2fr 2fr;
+        grid-template-areas: ". contact contact ." 
+                                ". email checkboxes ." 
+                                ". bubbles checkboxes ." 
+                                ". comments birthdate ."
+                                ". send send .";
     }
+
     .contact {
         text-align: center;
         grid-area: contact;
-        margin: auto;
+        margin: 2% auto;
+        width: 100%;
     }
     .email {
         grid-area: email;
-        margin: 0 35%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .email label{
+        margin-right: 2%;
     }
     .comments {
-        grid-area: comments;
-        margin: 0 35%;
+        grid-area: comments;    
+        width: 100%;
+        margin-left: 20%;
     }
+
     .checkboxes {
         grid-area: checkboxes;
-        margin: 0 35%;
+        width: 100%;
+        margin-left: 20%;
     }
     .bubbles {
         grid-area: bubbles;
-        margin: 0 35% 15%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .birthdate{
+        grid-area: birthdate;
+        width: 100%;
+        margin-top: 4%;
+        margin-left: 20%;
+    }
+
+    .send{
+        grid-area: send;
+        margin: auto;
+        font-size: 1.35em;
+        color: white;
+        background-color: rgb(238, 114, 13);
+        border: 2px;
+        border-color: rgb(238, 114, 13);
+        border-radius: 12%;
+        cursor: pointer;
+    }
+
+    .send:hover{
+        background-color: white;
+        border-color: white;
+        color: rgb(238, 114, 13);
     }
 }
 
@@ -82,34 +147,74 @@ body{
     body {
         overflow-x: hidden;
         font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        height: 100%;
+        margin: auto;
     }
+
     form {
         display: grid;
-        grid-template-columns: 20% 30% 30% 20%;
-        grid-template-rows: 20% 5% 35% 25% 15%;
-        grid-template-areas: ". contact contact ." ". email email ." ". comments comments ." ". checkboxes checkboxes ." ". bubbles bubbles .";
-        width: 100vw;
-        height: 100vh;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-rows: 1fr 0.5fr 0.5fr 2fr 2fr;
+        grid-template-areas: ". contact contact ." 
+                                ". email checkboxes ." 
+                                ". bubbles checkboxes ." 
+                                ". comments birthdate ."
+                                ". send send .";
     }
+
     .contact {
         text-align: center;
         grid-area: contact;
-        margin: auto;
+        margin: 2% auto;
+        width: 100%;
     }
     .email {
         grid-area: email;
-        margin: 0 35%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .email label{
+        margin-right: 2%;
     }
     .comments {
-        grid-area: comments;
-        margin: 0 35%;
+        grid-area: comments;    
+        width: 100%;
+        margin-left: 20%;
     }
+
     .checkboxes {
         grid-area: checkboxes;
-        margin: 0 35%;
+        width: 100%;
     }
     .bubbles {
         grid-area: bubbles;
-        margin: 0 35% 15%;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .birthdate{
+        grid-area: birthdate;
+        width: 100%;
+        margin-top: 4%;
+    }
+
+    .send{
+        grid-area: send;
+        margin: auto;
+        font-size: 1.35em;
+        color: white;
+        background-color: rgb(238, 114, 13);
+        border: 2px;
+        border-color: rgb(238, 114, 13);
+        border-radius: 12%;
+        cursor: pointer;
+    }
+
+    .send:hover{
+        background-color: white;
+        border-color: white;
+        color: rgb(238, 114, 13);
     }
 }

@@ -7,21 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@500display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="contact-styles.css">
-    <title>Contact Me</title>
+    <title>Contact</title>
 </head>
 
 <body>
-
     <form action="results.html" method="GET">
-        <h1 class="contact">Contact Me</h1>
+        <h1 class="contact">Contact</h1>
         <section class="email">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@email.com">
+            <input type="email" id="email" name="email" placeholder="example@email.com"><br>
         </section>
 
         <section class="comments">
             <p>Comments</p>
-            <textarea name="text" id="text" cols="30" rows="10" placeholder="Type comments here"></textarea>
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Type comments here"></textarea><br>
         </section>
 
         <section class="checkboxes">
@@ -37,8 +36,15 @@
             <input type="radio" id="yes" name="response" value="yes">
             <label for="yes">Yes</label><br>
             <input type="radio" id="no" name="response" value="no">
-            <label for="no">No</label>
+            <label for="no">No</label><br>
         </section>
+
+        <section class="birthdate">
+            <label for="birthday">Receive a Birthday Wish:</label><br><br>
+            <input type="date" id="birthday" name="birthday">
+        </section>
+
+        <button class="send">Submit</button>
     </form>
 </body>
 
