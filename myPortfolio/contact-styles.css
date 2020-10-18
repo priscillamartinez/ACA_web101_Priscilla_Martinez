@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 325px) {
     form {
         display: grid;
         grid-template-columns: 10% 40% 40% 10%;
@@ -19,19 +19,19 @@ body {
     }
     .email {
         grid-area: email;
-        margin: 0 35%;
+        margin: auto;
     }
     .comments {
         grid-area: comments;
-        margin: 0 35%;
+        margin: auto;
     }
     .checkboxes {
         grid-area: checkboxes;
-        margin: 0 35%;
+        margin: auto;
     }
     .bubbles {
         grid-area: bubbles;
-        margin: 0 35% 15%;
+        margin: auto;
     }
 }
 
@@ -67,37 +67,34 @@ body {
     }
 }
 
-form {
-    display: grid;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-rows: 20% 5% 35% 25% 15%;
-    grid-template-areas: ". contact contact ." ". email email ." ". comments comments ." ". checkboxes checkboxes ." ". bubbles bubbles .";
-    width: 100vw;
-    height: 100vh;
-}
-
-.contact {
-    text-align: center;
-    grid-area: contact;
-    margin: auto;
-}
-
-.email {
-    grid-area: email;
-    margin: 0 35%;
-}
-
-.comments {
-    grid-area: comments;
-    margin: 0 35%;
-}
-
-.checkboxes {
-    grid-area: checkboxes;
-    margin: 0 35%;
-}
-
-.bubbles {
-    grid-area: bubbles;
-    margin: 0 35% 15%;
+@media screen and (min-width: 1024px) {
+    form {
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-rows: 20% 5% 35% 25% 15%;
+        grid-template-areas: ". contact contact ." ". email email ." ". comments comments ." ". checkboxes checkboxes ." ". bubbles bubbles .";
+        width: 100vw;
+        height: 100vh;
+    }
+    .contact {
+        text-align: center;
+        grid-area: contact;
+        margin: auto;
+    }
+    .email {
+        grid-area: email;
+        margin: 0 35%;
+    }
+    .comments {
+        grid-area: comments;
+        margin: 0 35%;
+    }
+    .checkboxes {
+        grid-area: checkboxes;
+        margin: 0 35%;
+    }
+    .bubbles {
+        grid-area: bubbles;
+        margin: 0 35% 15%;
+    }
 }
