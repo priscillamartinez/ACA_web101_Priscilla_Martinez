@@ -77,7 +77,7 @@
     }
     form {
         display: grid;
-        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-columns: 20% 30% 30% 20%;
         grid-template-rows: 20% 5% 35% 25% 15%;
         grid-template-areas: ". contact contact ." ". email email ." ". comments comments ." ". checkboxes checkboxes ." ". bubbles bubbles .";
         width: 100vw;
