@@ -29,10 +29,22 @@ body{
 .picture img{
     height: 375px;
     width: 100%;
+    cursor: pointer;
+}
+
+#player{
+    visibility: visible;
+}
+
+.picture p{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .first{
     margin-bottom: .5em;
+    cursor: pointer;
 }
 
 .name{

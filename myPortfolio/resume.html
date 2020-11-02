@@ -4,32 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f1298564b2.js" crossorigin="anonymous"></script>
+    <script src="resume-interactive.js"></script>
     <link rel="stylesheet" href="resume-style.css">
     <title>Lionel Messi - Resume</title>
 </head>
 
 <body class="container">
     <header class="picture">
-        <img src="messi.jpg" alt="picture of football player Lionel Messi">
+        <img id="player" src="messi.jpg" alt="picture of football player Lionel Messi" onclick="hide_image('player');">
+        <p>Click image to hide</p>
         <h2>Football Player</h2>
     </header>
 
     <main class="name">
-        <h1 class="first">LIONEL</h1>
+        <h1 class="first" onclick="typeWriter()">LIONEL</h1>
         <h1 class="last">MESSI</h1>
         <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore totam odit quidem, atque
-            doloribus aut amet impedit? Quibusdam, odit alias. Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Ipsam adipisci vel sint vero enim in molestiae reiciendis repellendus beatae!
-            Reprehenderit.Impedit? Quibusdam, odit alias. Lorem ipsum dolor.</p>
+        <p id="info"></p>
     </main>
 
     <section class="contact">
         <h3 class="links">Contact Info</h3>
         <hr id="contact">
-        <i class="fas fa-envelope-open-text"></i>
+        <i id="symbol" class="fas fa-envelope-open-text" onclick="changeColor();"></i>
         <p>Email</p>
         <i class="fas fa-phone-volume"></i>
         <p>Phone</p>
